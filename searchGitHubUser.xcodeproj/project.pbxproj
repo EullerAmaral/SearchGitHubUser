@@ -56,6 +56,7 @@
 		2A2799082B55F596003F5713 /* searchGitHubUser */ = {
 			isa = PBXGroup;
 			children = (
+				2A7F26932B596D1200CD25B1 /* Service */,
 				2A27991D2B55F7CE003F5713 /* Home */,
 				2A2799092B55F596003F5713 /* AppDelegate.swift */,
 				2A27990B2B55F596003F5713 /* SceneDelegate.swift */,
@@ -73,6 +74,13 @@
 				2A27991E2B55FC4F003F5713 /* HomeScreen.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2A7F26932B596D1200CD25B1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
