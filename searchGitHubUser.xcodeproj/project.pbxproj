@@ -13,6 +13,8 @@
 		2A2799132B55F598003F5713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2799122B55F598003F5713 /* Assets.xcassets */; };
 		2A2799162B55F598003F5713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2799142B55F598003F5713 /* LaunchScreen.storyboard */; };
 		2A27991F2B55FC4F003F5713 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A27991E2B55FC4F003F5713 /* HomeScreen.swift */; };
+		2A8851C32B5A02DB00D79DAF /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8851C22B5A02DB00D79DAF /* GitHubModel.swift */; };
+		2A8851C52B5A03CC00D79DAF /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8851C42B5A03CC00D79DAF /* GitHubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2A2799152B55F598003F5713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A2799172B55F598003F5713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A27991E2B55FC4F003F5713 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		2A8851C22B5A02DB00D79DAF /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
+		2A8851C42B5A03CC00D79DAF /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		2A7F26932B596D1200CD25B1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2A8851C22B5A02DB00D79DAF /* GitHubModel.swift */,
+				2A8851C42B5A03CC00D79DAF /* GitHubAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -154,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A27991F2B55FC4F003F5713 /* HomeScreen.swift in Sources */,
+				2A8851C52B5A03CC00D79DAF /* GitHubAPI.swift in Sources */,
+				2A8851C32B5A02DB00D79DAF /* GitHubModel.swift in Sources */,
 				2A27990E2B55F596003F5713 /* HomeViewController.swift in Sources */,
 				2A27990A2B55F596003F5713 /* AppDelegate.swift in Sources */,
 				2A27990C2B55F596003F5713 /* SceneDelegate.swift in Sources */,
