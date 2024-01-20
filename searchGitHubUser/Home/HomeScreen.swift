@@ -1,6 +1,12 @@
 import UIKit
 
+protocol HomeScreenDelegate: AnyObject {
+    func searchButtonAction()
+}
+
 class HomeScreen: UIView {
+    
+    var delegate: HomeScreenDelegate?
     
     lazy var stack: UIStackView = {
         let stack = UIStackView()
@@ -24,6 +30,7 @@ class HomeScreen: UIView {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "User GitHub"
+        textField.autocorrectionType = .no
         textField.keyboardType = .default
         textField.clipsToBounds = true
         textField.borderStyle = .roundedRect
@@ -42,8 +49,14 @@ class HomeScreen: UIView {
         button.setTitleColor(.white, for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 4
+        button.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
         return button
     }()
+    
+    @objc func searchButtonTapped() {
+        delegate?.searchButtonAction()
+        print("Teste delegate2")
+    }
     
     private func addAllElements() {
         addSubview(stack)

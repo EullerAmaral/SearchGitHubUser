@@ -31,7 +31,6 @@ class GitHubAPI: UIViewController {
                     let json = try JSONDecoder().decode(GitHubModel.self, from: data)
                     DispatchQueue.main.async {
                         completion(.success(json))
-                        print(json.bio)
                     }
                 }
                 catch {
