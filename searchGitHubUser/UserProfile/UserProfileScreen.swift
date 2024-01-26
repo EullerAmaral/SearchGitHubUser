@@ -65,6 +65,14 @@ class UserProfileScreen: UIView {
         stack.addArrangedSubview(bioLabel)
     }
     
+    func displayGitHubUser(_ gitHubUser: GitHubModel) {
+        loginLabel.text = gitHubUser.login
+        idLabel.text = String(gitHubUser.id)
+        followersLabel.text = String(gitHubUser.followers)
+        bioLabel.text = gitHubUser.bio
+        
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemGray6

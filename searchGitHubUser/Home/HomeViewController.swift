@@ -24,13 +24,15 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeScreenDelegate {
     func searchButtonAction() {
-        let vc = UserProfileViewController()
-        navigationController?.pushViewController(vc, animated: true)
+
         if let user = homeScreen?.userTextField.text {
             GitHubAPI.shared.getUser(for: user) { [weak self] result in
                 switch result {
                 case.success(let gitHubUserData):
-                    print(gitHubUserData)
+                    DispatchQueue.main.async {
+                        let vc = UserProfileViewController(gitHubModel: gitHubUserData)
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    }
                 case .failure(_):
                     break
                 }
